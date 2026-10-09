@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola Mundo</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #14213d;
+        background: #f7f7fb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 18% 22%, rgba(0, 168, 150, 0.2), transparent 28%),
+          radial-gradient(circle at 86% 16%, rgba(255, 183, 3, 0.24), transparent 30%),
+          linear-gradient(135deg, #f8fafc 0%, #edf6f9 48%, #fff7ed 100%);
+      }
+
+      main {
+        width: min(92vw, 760px);
+        padding: 56px 28px;
+        text-align: center;
+      }
+
+      .panel {
+        padding: 48px 34px;
+        border: 1px solid rgba(20, 33, 61, 0.1);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 22px 60px rgba(20, 33, 61, 0.14);
+        backdrop-filter: blur(14px);
+      }
+
+      .label {
+        margin: 0 0 18px;
+        color: #007f73;
+        font-size: 0.86rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(3.2rem, 12vw, 7.5rem);
+        line-height: 0.92;
+        color: #14213d;
+      }
+
+      .accent {
+        color: #f77f00;
+      }
+
+      p {
+        max-width: 520px;
+        margin: 24px auto 0;
+        color: #3d4a5c;
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel" aria-label="Presentacion principal">
+        <p class="label">Mi primer repositorio en GitHub</p>
+        <h1>Hola <span class="accent">mundo</span></h1>
+        <p>Una pagina sencilla publicada desde GitHub con HTML y estilos personalizados.</p>
+      </section>
+    </main>
+  </body>
+</html>
